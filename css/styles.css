@@ -276,11 +276,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
        }
   }
 /* mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 .features-item:not(:last-child) {
 margin-bottom: 72px;
-    /* width: calc((100% - 72px) / 4); */
-}
+    }
 }
 /* tablet */
 @media only screen and (min-width: 768px) {
@@ -333,7 +332,7 @@ margin-bottom: 72px;
 @media only screen and (min-width: 768px) {
     .features-title {
     text-align: left;
-    }
+        }
 }
 /* dekstop */
 @media only screen and (min-width: 1158px) {
@@ -350,6 +349,21 @@ margin-bottom: 72px;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+}
+/* mobile and tablet */
+@media only screen and (max-width: 1158px) {
+    .features-text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+    }
+}
+/* dekstop */
+@media only screen and (min-width: 1158px) {
+    .features-text {
+        font-weight: 400;
+    }
 }
 
 /* what we are doing section class index */
