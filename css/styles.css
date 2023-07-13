@@ -82,7 +82,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-right: 76px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .header-logo {
         padding-top: 24px;
         padding-bottom: 24px;
@@ -264,6 +264,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* tablet */
 @media only screen and (min-width: 768px) {
     .features {
+        
         }
       }
 /* dekstop */
@@ -1189,7 +1190,9 @@ text-transform: capitalize;
 .address-mobile {
     margin-bottom: 48px;
 }
-
+.address-mobile-item {
+    width: fit-content;
+}
 .address-mobile-item:not(:last-child) {
     margin-bottom: 40px;
 }
