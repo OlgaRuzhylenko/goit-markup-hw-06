@@ -440,34 +440,41 @@ margin-bottom: 72px;
     padding-right: 82px;
     padding-left: 82px;
    }
-
-.team {
-    background-color: var(--secondary-bgc);
-    /* padding: 120px 0;  */
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .container.team-container {
+    padding-right: 108px;
+    padding-left: 108px;
     }
-    /* mobile */
+}
+/* dekstop */
+@media only screen and (min-width: 1158px) {
+    .container.team-container {
+    padding-right: 0;
+    padding-left: 0;
+    }
+}
+    /* mobile and tablet */
     .team {
         background-color: var(--secondary-bgc);
         padding-top: 96px;
         padding-bottom: 96px;
          }
-    /* tablet */
-    /* @media only screen and (min-width: 768px) {
+    /* dekstop */
+    @media only screen and (min-width: 1158px) {
         .team {
-            padding: 96px 108px; */
-        }
+            padding-top: 120px;
+            padding-bottom: 120px;
+                   }
     }
-    /* dekstop
-    @media only screen and (min-width: 1158px) { */
-        
-    } */
+    
 .title-team {
     color: var(--secondary-black-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing:  0.72px;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
@@ -487,23 +494,37 @@ display: flex;
 flex-wrap: wrap;
 row-gap: 64px;
 column-gap: 24px;
+align-items: center;
     }
        }
+/* dekstop */
+@media only screen and (min-width: 1158px) {
+    .list-team.list {
+        gap: 24px;
+        justify-content: space-between;
+    }
+}
 /* mobile */
 .item-team {
     background-color: var(--primary-white-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    max-width: 264px;
 }
 @media only screen and (max-width: 767.98px){
     .item-team:not(:last-child) {
         margin-bottom: 72px;
     }
     }
-/* dekstop */
+/* tablet */
 .item-team {
     flex-basis: calc((100% - 24px) / 2);
-    max-width: 264px;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08); */
+     }
+/* dekstop */
+@media only screen and (min-width: 1158px) {
+    .item-team {
+    flex-basis: calc((100% - 24px * 3) / 4);
+         }
 }
 
 .img-team {
