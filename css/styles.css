@@ -408,10 +408,16 @@ letter-spacing: 0.32px;
 }
 
 /* what we are doing section class index */
+/* mobile and dekstop */
+@media only screen and (max-width: 1157.98px) {
+    .doing {
+        display: none;
+    }
+
+}
 .doing {
        padding-bottom: 120px;
-    /* background-color: lightpink; */
-}
+ }
 .title-doing {
 color:  var(--secondary-black-color);
 font-weight: 700;
