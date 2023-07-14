@@ -96,18 +96,19 @@ margin-right: 76px;
 .header-logo-text {
     color: var(--secondary-black-color)
 }
+
 .header-list {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-letter-spacing: 0.02em;
+letter-spacing: 0.32px;
 
 display: flex;
 align-items: center;
 gap: 40px;
 }
 /* mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
     .header-list {
         display: none;
     }
@@ -148,19 +149,32 @@ bottom: -1px;
 .header-link-active.line {
     color: var(--hover-color);
 }
+
 .address {   
 font-style: normal;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+/* dekstop */
+@media only screen and (min-width: 1158px) {
 .address-list {
 display: flex;
+flex-direction: row;
 align-items: center;
 gap: 40px;
 }
+}
 /* mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
     .address-list {
         display: none;
     }
