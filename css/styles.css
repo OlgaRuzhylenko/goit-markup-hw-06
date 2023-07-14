@@ -82,11 +82,16 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-right: 76px;
 }
-@media only screen and (max-width: 768px) {
+/* mobile */
+.header-logo {
+        padding-top: 25.5px;
+        padding-bottom: 23.5px;
+                   }
+/* tablet and dekstop */
+@media only screen and (min-width: 768px) {
     .header-logo {
-        padding-top: 24px;
-        padding-bottom: 24px;
-           }
+       padding-bottom: 25.5px;
+                   }
 }
 .header-logo-text {
     color: var(--secondary-black-color)
