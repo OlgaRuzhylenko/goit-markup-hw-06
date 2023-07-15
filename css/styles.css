@@ -254,8 +254,9 @@ section {
     max-width: 1440px;
     margin: 0 auto;
        }
-/* 
-       Retina screen */
+
+
+/* Retina screen */
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
@@ -274,7 +275,7 @@ section {
         }
     }
 }
-@media only screen and (min-width: 469px) {
+@media only screen and (min-width: 769px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
         url(../images/hero-section/people-office_desk@1x.jpg);
@@ -295,9 +296,17 @@ line-height: 1.07;
 text-align: center;
 letter-spacing: 0.72px;
 
-/* max-width: 496px; */
+
 max-width: 320px;
 margin: 0 auto;
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .hero-title {
+    font-size: 56px;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    }
 }
 /* mobile */
 .hero-button {
@@ -319,6 +328,12 @@ border: none;
 border-radius: 4px;
 
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* tablet */
+@media only screen and (min-width: 768px){
+    .hero-button {
+        margin: 36px auto 0 auto;
+    }
 }
 .hero-button:hover, .hero-button:focus {
     background-color: var(--hover-color);
