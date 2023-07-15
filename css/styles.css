@@ -234,12 +234,15 @@ section {
 }
 
 /* Hero section class index */
+/* mobile */
 .hero {
     background-color: var(--secondary-black-color);
     color: var(--primary-white-color);
-    padding-top: 188px;
+    /* padding-top: 188px; */
+    padding-top: 112px;
     padding-right: 0;
-    padding-bottom: 188px;
+    /* padding-bottom: 188px; */
+    padding-bottom: 112px;
     padding-left: 0;
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
@@ -287,15 +290,16 @@ section {
 /* mobile */
 .hero-title {   
 font-weight: 700;
-font-size: 56px;
+font-size: 36px;
 line-height: 1.07;
 text-align: center;
-letter-spacing: 1.12px;
+letter-spacing: 0.72px;
 
 /* max-width: 496px; */
 max-width: 320px;
 margin: 0 auto;
 }
+/* mobile */
 .hero-button {
 background-color: var(--primary-accent-color);
 color: var(--primary-white-color);
@@ -309,7 +313,8 @@ display: block;
 height: 56px;
 min-width: 169px;
 padding: 16px 32px 16px 32px;
-margin: 48px auto 0 auto;
+/* margin: 48px auto 0 auto; */
+margin: 72px auto 0 auto;
 border: none;
 border-radius: 4px;
 
