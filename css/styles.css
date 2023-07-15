@@ -211,8 +211,8 @@ gap: 40px;
     padding-right: 16px;
     padding-left: 16px;
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
 }
 /* Tablet screen */
 @media screen and (min-width: 768px) {
@@ -234,17 +234,15 @@ section {
 }
 
 /* Hero section class index */
-/* mobile */
+/* mobile and tablet */
 .hero {
     background-color: var(--secondary-black-color);
     color: var(--primary-white-color);
-    /* padding-top: 188px; */
+    
     padding-top: 112px;
     padding-right: 0;
-    /* padding-bottom: 188px; */
     padding-bottom: 112px;
     padding-left: 0;
-
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
        url(../images/hero-section/people-office_mob@1x.jpg);
 
@@ -255,7 +253,12 @@ section {
     margin: 0 auto;
        }
 
-
+@media only screen and (min-width: 768px) {
+    .hero {
+padding-top: 188px;
+padding-bottom: 188px;
+    }
+       }
 /* Retina screen */
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
@@ -296,7 +299,6 @@ line-height: 1.07;
 text-align: center;
 letter-spacing: 0.72px;
 
-
 max-width: 320px;
 margin: 0 auto;
 }
@@ -308,6 +310,7 @@ margin: 0 auto;
     max-width: 496px;
     }
 }
+
 /* mobile */
 .hero-button {
 background-color: var(--primary-accent-color);
@@ -322,7 +325,7 @@ display: block;
 height: 56px;
 min-width: 169px;
 padding: 16px 32px 16px 32px;
-/* margin: 48px auto 0 auto; */
+
 margin: 72px auto 0 auto;
 border: none;
 border-radius: 4px;
@@ -335,12 +338,17 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin: 36px auto 0 auto;
     }
 }
+/* dekstop */
+@media only screen and (min-width: 1158px) {
+    .hero-button {
+margin: 48px auto 0 auto;
+    }
+}
 .hero-button:hover, .hero-button:focus {
     background-color: var(--hover-color);
     color: var(--primary-white-color);
 }
 
-/* features section class index */
 /* mobile and tablet*/
 .features {
     padding-top: 96px;
@@ -1011,9 +1019,15 @@ margin-bottom: 16px;
 }
 /* mobile */
 .subscribe-form {
+  
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .subscribe-form {
     display: flex;
     gap: 24px;
     align-items: baseline;
+}
 }
 
 .subscribe-form-label {
@@ -1415,8 +1429,7 @@ line-height: 1.11;
 letter-spacing: 0.72px;
 text-transform: capitalize;
 }
-.mobile-menu-link:hover,
-.mobile-menu-link:focus
+.mobile-menu-link:active
  {
     color: var(--hover-color);
 }
