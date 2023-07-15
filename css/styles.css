@@ -900,6 +900,20 @@ flex-direction: column;
 align-items: center;
 }
 /* dekstop */
+@media only screen and (min-width: 768px) {
+    .logo-media {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: left;
+        gap: 24px;
+        
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+    .logo-media {
+        padding: 0 108px;
+    }
+}
 /* mobile */
 .footer-media {
 /* margin-right: 80px; */
@@ -914,10 +928,11 @@ letter-spacing: 0.32px;
 
 margin-bottom: 16px;
 }
-/* dekstop */
+/* mobile */
 .subscribe-form {
-    /* display: flex;
-    gap: 24px; */
+    display: flex;
+    gap: 24px;
+    align-items: baseline;
 }
 
 .subscribe-form-label {
