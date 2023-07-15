@@ -269,6 +269,7 @@ section {
             background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
            url(../images/hero-section/peolpe-office_tab@2x.jpg);
         }
+    }
 }
 @media only screen and (min-width: 469px) {
     .hero {
@@ -281,7 +282,9 @@ section {
            url(../images/hero-section/people-office_desk@2x.jpg);
         }
     }
+
 }
+/* mobile */
 .hero-title {   
 font-weight: 700;
 font-size: 56px;
@@ -289,7 +292,8 @@ line-height: 1.07;
 text-align: center;
 letter-spacing: 1.12px;
 
-max-width: 496px;
+/* max-width: 496px; */
+max-width: 320px;
 margin: 0 auto;
 }
 .hero-button {
