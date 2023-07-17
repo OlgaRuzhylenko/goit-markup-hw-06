@@ -920,7 +920,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 max-width: 268px;
-margin-bottom: 72px;
+/* margin-bottom: 72px; */
 margin-left: auto;
 margin-right: 0%;
 text-align: left;
@@ -931,6 +931,7 @@ text-align: left;
         max-width: 264px;
     }
 }
+
 /* mobile */
 .footer-logo-text {
     /* margin-right: 120px; */
@@ -953,7 +954,7 @@ margin-bottom: 16px;
 .list-media {
 display: flex;
 gap: 16px;
-margin-bottom: 72px;
+/* margin-bottom: 72px; */
 }
 .item-media {    
     width: 40px;
@@ -1106,22 +1107,33 @@ pointer-events: none;
 visibility: hidden;
 pointer-events: none;
 }
+/* 320px */
 .modal {
-    /* display: flex; */
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     position: absolute;
     top: 50%;
     left: 50%;
 transform: translateX(-50%) translateY(-50%);
 
-    width: 408px;
+    width: 100%;
     min-height: 584px;
     background-color: #FCFCFC;
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+/* modal */
+    @media only screen and (min-width: 428px) {
+        .modal {
+            width: 408px; 
+        }  
+    }
+    /* tablet and dekstop */
+    @media only screen and (min-width: 768px) {
+        .modal {
+            padding: 72px 24px 24px 24px;
+        } 
+    }
 .modal-icon {
     /* fill: #2E2F42; */
  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1162,14 +1174,15 @@ transform: translateX(-50%) translateY(-50%);
     }
 
     .modal-caption {
-        display: block;
-        width: 360px;
-        color: var(--secondary-black-color);
-text-align: center;
-font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.32px;
-margin-bottom: 16px;
+    display: block;
+    width: 360px;
+    color: var(--secondary-black-color);
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+    width: 100%;
     }
     .modal-form {
 
@@ -1437,8 +1450,7 @@ line-height: 1.11;
 letter-spacing: 0.72px;
 text-transform: capitalize;
 }
-.mobile-menu-link:active
- {
+.mobile-menu-link.active {
     color: var(--hover-color);
 }
 
@@ -1468,10 +1480,17 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.4px;
 }
+/* 320 px */
 .list-media-mobile {
     display: flex;
     align-items: center;
-    gap: 56px;
+    justify-content: space-between;
+}
+/* mobile */
+@media only screen and (min-width: 428px) {
+    .list-media-mobile {
+        gap: 56px;
+    }
 }
 .item-media-mobile {
     width: 40px;
