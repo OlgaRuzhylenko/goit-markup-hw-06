@@ -929,7 +929,7 @@ text-align: left;
 /* tablet */
 @media only screen and (min-width: 767px) and (min-width: 1157.98px) {
     .clogan-footer {
-        max-width: 264px;
+        min-width: 264px;
     }
 }
 
